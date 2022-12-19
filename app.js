@@ -14,6 +14,7 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
+let timeLeft= 10;
 
 
 
@@ -26,6 +27,8 @@ const foodButton = document.querySelectorAll('#food')
 const careButton = document.querySelectorAll('#care')
 const playButton = document.querySelectorAll('#play')
 const resetButton = document.querySelectorAll('#reset')
+let countdownEl = document.getElementById('countdown')
+
 
 
 /*----------------------------- Event Listeners -----------------------------*/
