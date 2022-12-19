@@ -1,5 +1,13 @@
 /*-------------------------------- Constants --------------------------------*/
 
+const demands = [
+  'I need attention 🥺',
+  'I am hungry! 😡',
+  'Clean my teeth! 🦷',
+  'Play with me !🎾'
+
+]
+
 
 
 
