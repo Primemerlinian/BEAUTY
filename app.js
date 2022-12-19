@@ -16,6 +16,8 @@ const demands = [
 
 
 
+
+
 /*------------------------ Cached Element References ------------------------*/
 
 const beginButton = document.querySelectorAll('.begin')
@@ -25,9 +27,10 @@ const careButton = document.querySelectorAll('#care')
 const playButton = document.querySelectorAll('#play')
 const resetButton = document.querySelectorAll('#reset')
 
+
 /*----------------------------- Event Listeners -----------------------------*/
 
-begin.addEventListener('click', beginGame)
+// begin.addEventListener('click', beginGame)
 
 attention.addEventListener('click', handleClick)
 
@@ -40,3 +43,14 @@ play.addEventListener('click', handleClick)
 
 
 /*-------------------------------- Functions --------------------------------*/
+
+
+
+
+let time = setInterval(function() {
+  countdownEl.textContent = timeLeft + ' seconds remaining.';
+  timeLeft -= 1;
+  if (timeLeft < 0) {
+      countdownEl.textContent = 'Finished!'
+  }
+}, 1000)
