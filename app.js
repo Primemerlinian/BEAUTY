@@ -13,26 +13,29 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
-let timeLeft= 60;
+let progress, timer
 
 
 
 
 /*------------------------ Cached Element References ------------------------*/
 
-const beginButton = document.querySelectorAll('.begin')
+const beginButton = document.getElementById('begin-button')
+const messageEl = document.getElementById('message')
 const attentionButton = document.querySelectorAll('#attention')
 const foodButton = document.querySelectorAll('#food')
 const careButton = document.querySelectorAll('#care')
 const playButton = document.querySelectorAll('#play')
 const resetButton = document.querySelectorAll('#reset')
-let countdownEl = document.getElementById('countdown')
+const countdownEl = document.getElementById('countdown')
+const progressBar =  document.getElementById('.progress-bar')
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-// begin.addEventListener('click', beginGame)
+
+beginButton.addEventListener('click', begin)
 
 // attention.addEventListener('click', handleClick)
 
@@ -49,20 +52,28 @@ let countdownEl = document.getElementById('countdown')
 init ()
 
 function init() {
-  timer = 0
-  beginButton.style = 'display: block'
-
+  clearInterval(timer)
+  progress = 0
 }
 
-function render () {
-  return messageEl.textContent = demands[Math.floor(Math.random)*demands.length]
+function randomDemands () {
+  return messageEl.textContent = randomDemands = Math.floor[(Math.random()* randomDemands.length)];
+}
+function begin () {
+  let text = randomDemands ()
+  messageEl.textContent = text
+  beginButton.setAttribute('hidden', true)
+  let timeLeft = 40
+  
 }
 
 
 // let time = setInterval(function() {
-//   countdownEl.textContent = timeLeft + ' seconds remaining.';
-//   timeLeft -= 1;
-//   if (timeLeft < 0) {
-//       countdownEl.textContent = 'Demand time complete'
-//   }
-// }, 1000)
+//     countdownEl.textContent = timeLeft + ' seconds remaining.';
+//     timeLeft -= 1;
+//     if (timeLeft < 0) {
+//           countdownEl.textContent = 'Demand time complete'
+//       }
+//     }, 1000)
+    
+

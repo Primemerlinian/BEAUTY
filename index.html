@@ -13,24 +13,28 @@
   <div id="pet">
     <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/b942e8215e9fd06.png">
   </div>
-  <div id="begin-button">
-    <button id="Begin">Begin</button>
+  <div id="beginBtton">
+    <button id='begin-button'>Begin</button>
   </div>
-  <div id="demand-container">
-    <p id='message'></p>
+  <div id="resetButton">
+    <button id="reset-button">Reset</button>
   </div>
   <div id="countdown">
     <h3>Timer</h3>
   </div>
-  <div class="wrapper">
-    <div class="progress-bar">
-      <span class="progress-bar-fill" style="width: 0%;"></span>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+    aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      <span class="sr-only">0% Complete</span>
     </div>
-  <div id="demand-buttons">
+    <div class="demands">
+    <p id='message'></p>
+    <div class="demand-images">
     <input type="image" src="../assets/dogcarebrushicon.png" id="care" alt=" Care Button" height="100px"/>
     <input type="image" src="../assets/dogfoodbowl.png" id="food" alt="Food Button" height="100px"/>
     <input type="image" src="../assets/playball.png" id="ball" alt="Ball Button" height="100px"/>
     <input type="image" src="../assets/playprints.png" id="attention" alt="attention Button" height="100px"/>
   </div>
+</div>
 </body>
 </html>
