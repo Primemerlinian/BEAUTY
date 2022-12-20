@@ -59,10 +59,10 @@ function render () {
 }
 
 
-let time = setInterval(function() {
-  countdownEl.textContent = timeLeft + ' seconds remaining.';
-  timeLeft -= 1;
-  if (timeLeft < 0) {
-      countdownEl.textContent = 'Demand time complete'
-  }
-}, 1000)
+// let time = setInterval(function() {
+//   countdownEl.textContent = timeLeft + ' seconds remaining.';
+//   timeLeft -= 1;
+//   if (timeLeft < 0) {
+//       countdownEl.textContent = 'Demand time complete'
+//   }
+// }, 1000)
