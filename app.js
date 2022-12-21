@@ -14,7 +14,9 @@ const demands = [
 /*-------------------------------- Variables --------------------------------*/
 
 let progress, timer
-let timeLeft= 1000000;
+let timeLeft= 10;
+let demandProg = 0
+let demandLoser = false
 
 
 
@@ -24,15 +26,15 @@ let timeLeft= 1000000;
 
 const beginButton = document.getElementById('begin-button')
 const messageEl = document.getElementById('message')
-const attentionButton = document.querySelectorAll('#attention')
-const foodButton = document.querySelectorAll('#food')
-const careButton = document.querySelectorAll('#care')
-const playButton = document.querySelectorAll('#play')
+const attention = document.getElementById('attention')
+const food = document.querySelector('#food')
+const care = document.querySelector('#care')
+const ball = document.querySelector('#ball')
 const resetButton = document.querySelectorAll('#reset')
 const countdownEl = document.getElementById('countdown')
 const progressBar =  document.getElementById('.progress-bar')
 let demandNum = Math.floor(Math.random()* demands.length)
-console.log(demands[demandNum])
+// console.log(demands[demandNum])
 
 
 
@@ -43,13 +45,13 @@ console.log(demands[demandNum])
 beginButton.addEventListener('click', begin)
 // resetButton.addEventListener('click', reset)
 
-// attention.addEventListener('click', handleClick)
+attention.addEventListener('click', demandAttention)
 
-// food.addEventListener('click', handleClick)
+food.addEventListener('click', demandFood)
 
-// care.addEventListener('click', handleClick)
+care.addEventListener('click', demandCare)
 
-// play.addEventListener('click', handleClick)
+ball.addEventListener('click', demandBall)
 
 
 
@@ -58,23 +60,45 @@ beginButton.addEventListener('click', begin)
 init ()
 
 function init() {
-  progress = 0
+  demandProg = 0
 }
 
 function randomDemands () {
-  return messageEl.textContent = randomDemands = Math.floor[(Math.random()* randomDemands.length)];
+  let randomNum =  [Math.floor(Math.random() * demands.length)]
+  return messageEl.innerHTML = demands[randomNum]
 }
 function begin () {
   let text = randomDemands ()
-  messageEl.textContent = text
+  messageEl.innerHTML = text
   beginButton.setAttribute('hidden', true)
   
 }
 
-function moreDemands(evt) {
-  console.log(evt.target)
+function demandAttention() {
+  if(messageEl.innerHTML === demands[0]) {
+    console.log('sanity check')
+    randomDemands()
+    return
+  }
 }
-
+function demandFood() {
+  if (messageEl.innerHTML === demands[1]) {
+    randomDemands()
+    return
+}
+}
+function demandCare () {
+  if (messageEl.innerHTML === demands[2]) {
+    randomDemands ()
+    return
+  }
+}
+function demandBall () {
+    if (messageEl.innerHTML === demands[3]) {
+      randomDemands ()
+    return
+  }
+}
 
 let time = setInterval(function() {
     countdownEl.textContent = timeLeft + ' seconds remaining.';
@@ -83,5 +107,8 @@ let time = setInterval(function() {
           countdownEl.textContent = 'Demand time complete'
       }
     }, 1000)
+    
+    
+
     
 
