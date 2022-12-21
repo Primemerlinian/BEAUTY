@@ -13,7 +13,7 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
-let progress, timer
+let progress, timer, timeLeft
 
 
 
@@ -29,6 +29,9 @@ const playButton = document.querySelectorAll('#play')
 const resetButton = document.querySelectorAll('#reset')
 const countdownEl = document.getElementById('countdown')
 const progressBar =  document.getElementById('.progress-bar')
+let demandNum = Math.floor(Math.random()* demands.length)
+console.log(demands[demandNum])
+
 
 
 
@@ -36,6 +39,7 @@ const progressBar =  document.getElementById('.progress-bar')
 
 
 beginButton.addEventListener('click', begin)
+// resetButton.addEventListener('click', reset)
 
 // attention.addEventListener('click', handleClick)
 
@@ -63,9 +67,10 @@ function begin () {
   let text = randomDemands ()
   messageEl.textContent = text
   beginButton.setAttribute('hidden', true)
-  let timeLeft = 40
   
 }
+
+
 
 
 // let time = setInterval(function() {
