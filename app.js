@@ -13,7 +13,9 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
-let progress, timer, timeLeft
+let progress, timer
+let timeLeft= 1000000;
+
 
 
 
@@ -56,7 +58,6 @@ beginButton.addEventListener('click', begin)
 init ()
 
 function init() {
-  clearInterval(timer)
   progress = 0
 }
 
@@ -70,15 +71,17 @@ function begin () {
   
 }
 
+function moreDemands(evt) {
+  console.log(evt.target)
+}
 
 
-
-// let time = setInterval(function() {
-//     countdownEl.textContent = timeLeft + ' seconds remaining.';
-//     timeLeft -= 1;
-//     if (timeLeft < 0) {
-//           countdownEl.textContent = 'Demand time complete'
-//       }
-//     }, 1000)
+let time = setInterval(function() {
+    countdownEl.textContent = timeLeft + ' seconds remaining.';
+    timeLeft -= 1;
+    if (timeLeft < 0) {
+          countdownEl.textContent = 'Demand time complete'
+      }
+    }, 1000)
     
 
