@@ -1,1 +1,1 @@
-# Beauty
+<h1> Meet Beauty. Your new favorite online pet simulator!</h1>
