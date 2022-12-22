@@ -14,10 +14,11 @@ const demands = [
 /*-------------------------------- Variables --------------------------------*/
 
 let timer
-let timeLeft= 10;
+let timeLeft= 60;
 let progress= 0
 let demandLoser = false
-let demandTime = 40
+let demandTime = 60
+
 
 
 
@@ -33,9 +34,13 @@ const care = document.querySelector('#care')
 const ball = document.querySelector('#ball')
 // const resetButton = document.querySelectorAll('#reset')
 const countdownEl = document.getElementById('countdown')
-const progBar = document.querySelectorAll('.progress-bar')
+const progBar = document.querySelectorAll('progressBar')
 let demandNum = Math.floor(Math.random()* demands.length)
 // console.log(demands[demandNum])
+const calmSound = new Audio ("../assets/audio/calmgameplay.wav")
+let winner = document.querySelector('#winner')
+let loser = document.querySelector('#loser')
+
 
 
 
@@ -44,7 +49,8 @@ let demandNum = Math.floor(Math.random()* demands.length)
 
 
 beginButton.addEventListener('click', begin)
-// resetButton.addEventListener('click', reset)
+
+// resetButton.addEventListener('click', init)
 
 attention.addEventListener('click', demandAttention)
 
@@ -61,7 +67,10 @@ ball.addEventListener('click', demandBall)
 init ()
 
 function init() {
-  progBar.item(0).setAttribute('style', `width: ${progress}%`)
+  stopPlaying = false
+  timeLeft = demandTime
+  resetButton.setAttribute('shown',true)
+  calmSound.pause()
 }
 
 function randomDemands () {
@@ -72,42 +81,59 @@ function begin () {
   let text = randomDemands ()
   messageEl.innerHTML = text
   beginButton.setAttribute('hidden', true)
+
+  calmSound.volume = 0.20
+  calmSound.play()
   
 }
 
 function demandAttention() {
   if(messageEl.innerHTML === demands[0]) {
+    progress += 10
     randomDemands()
     return
   }
-  progress += 10
+  winnerCheck()
 }
 function demandFood() {
   if (messageEl.innerHTML === demands[1]) {
+    progress +=10
     randomDemands()
     return
   }
-  progress +=10
+  winnerCheck()
 }
 function demandCare () {
   if (messageEl.innerHTML === demands[2]) {
+    progress += 10
     randomDemands ()
     return
   }
-  progress += 10
+  winnerCheck()
 }
 function demandBall () {
     if (messageEl.innerHTML === demands[3]) {
+      progress += 10
       randomDemands ()
       return
     }
-    progress += 10
+    winnerCheck()
 }
 
 
+function winnerCheck() {
+  if (progress >= 90) {
+    winner.removeAttribute('hidden')
+    messageEl.setAttribute('hidden', true)
+    stopPlaying = true
+    calmSound.pause()
+  } else if ((progress <= 0) || timeLeft === 0) {
+    loser.removeAttribute('hidden')
+    stopPlaying = true
+    calmSound.pause()
 
-
-
+  }
+}
 
 
 let time = setInterval(function() {

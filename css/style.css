@@ -64,3 +64,14 @@ h2 {
 .beginButton {
 align-items: center;
 }
+
+.progressBar {
+  width: 78%;
+  height: 15px;
+  background-color: red;
+  text-align: center;
+  line-height: 20px;
+  border: 2px solid black;
+  padding-left: 10px;
+  float: right;
+}
