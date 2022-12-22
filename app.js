@@ -1,10 +1,10 @@
 /*-------------------------------- Constants --------------------------------*/
 
 const demands = [
-  'I need attention 🥺',
-  'I am hungry! 😡',
-  'Clean my teeth! 🦷',
-  'Play ball with me !🎾'
+  'I need attention 🥺🐾',
+  'I am hungry 😡',
+  'Clean my teeth 🦷',
+  'Play ball with me 🎾'
 ]
 
 
@@ -13,10 +13,11 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
-let progress, timer
+let timer
 let timeLeft= 10;
-let demandProg = 0
+let progress= 0
 let demandLoser = false
+let demandTime = 40
 
 
 
@@ -30,9 +31,9 @@ const attention = document.getElementById('attention')
 const food = document.querySelector('#food')
 const care = document.querySelector('#care')
 const ball = document.querySelector('#ball')
-const resetButton = document.querySelectorAll('#reset')
+// const resetButton = document.querySelectorAll('#reset')
 const countdownEl = document.getElementById('countdown')
-const progressBar =  document.getElementById('.progress-bar')
+const progBar = document.querySelectorAll('.progress-bar')
 let demandNum = Math.floor(Math.random()* demands.length)
 // console.log(demands[demandNum])
 
@@ -60,7 +61,7 @@ ball.addEventListener('click', demandBall)
 init ()
 
 function init() {
-  demandProg = 0
+  progBar.item(0).setAttribute('style', `width: ${progress}%`)
 }
 
 function randomDemands () {
@@ -76,29 +77,38 @@ function begin () {
 
 function demandAttention() {
   if(messageEl.innerHTML === demands[0]) {
-    console.log('sanity check')
     randomDemands()
     return
   }
+  progress += 10
 }
 function demandFood() {
   if (messageEl.innerHTML === demands[1]) {
     randomDemands()
     return
-}
+  }
+  progress +=10
 }
 function demandCare () {
   if (messageEl.innerHTML === demands[2]) {
     randomDemands ()
     return
   }
+  progress += 10
 }
 function demandBall () {
     if (messageEl.innerHTML === demands[3]) {
       randomDemands ()
-    return
-  }
+      return
+    }
+    progress += 10
 }
+
+
+
+
+
+
 
 let time = setInterval(function() {
     countdownEl.textContent = timeLeft + ' seconds remaining.';
@@ -107,8 +117,6 @@ let time = setInterval(function() {
           countdownEl.textContent = 'Demand time complete'
       }
     }, 1000)
-    
-    
 
-    
+
 
