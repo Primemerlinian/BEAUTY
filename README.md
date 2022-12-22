@@ -11,3 +11,10 @@
 <li>JavaScript</li>
 <li>CSS</li>
 <ul>
+
+<h4> NEXT STEPS/ ICE BOX 🧊</h4>
+<ul>
+<li> Add levelup functionaltiy where dog grows up.</li>
+<li>Add sound effects to each button.</li>
+<li>Add popover page displaying instructions for the game.</li>
+<ul>

@@ -20,6 +20,7 @@ h1 {
 }
 
 #food {
+  
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding: 10px;
@@ -47,7 +48,12 @@ h1 {
 }
 
 .demand-images {
+  display: flex;
   padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
 }
 
 
