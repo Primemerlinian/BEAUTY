@@ -13,7 +13,7 @@ const demands = [
 
 /*-------------------------------- Variables --------------------------------*/
 
-let timeLeft= 60;
+let timeLeft= 40;
 let progress= 0
 let time
 
@@ -65,16 +65,15 @@ ball.addEventListener('click', demandBall)
 init ()
 
 function init() {
-  stopPlaying = false
   resetButton.style.visibility = 'visible';
-  console.log('resetclick');
   timeLeft= 60
   progress= 0
   messageEl.innerText = ''
   countdownEl.innerText = ''
   beginButton.style.visibility = 'visible';
-  winner.innerText = '';
-  loser.innerText = '';
+  winner.setAttribute('hidden', true)
+  loser.setAttribute('hidden', true)
+
   calmSound.pause()
   clearInterval(time)
 }
@@ -86,7 +85,6 @@ function randomDemands () {
 function begin () {
   let text = randomDemands ()
   messageEl.innerHTML = text
-  // beginButton.setAttribute('hidden', true)
   beginButton.style.visibility = 'hidden';
   calmSound.volume = 0.20
   calmSound.play()
@@ -98,7 +96,6 @@ function demandAttention() {
   if(messageEl.innerHTML === demands[0]) {
     progress += 10
     randomDemands()
-    return
   }
   winnerCheck()
 }
@@ -106,7 +103,6 @@ function demandFood() {
   if (messageEl.innerHTML === demands[1]) {
     progress +=10
     randomDemands()
-    return
   }
   winnerCheck()
 }
@@ -114,7 +110,6 @@ function demandCare () {
   if (messageEl.innerHTML === demands[2]) {
     progress += 10
     randomDemands ()
-    return
   }
   winnerCheck()
 }
@@ -122,22 +117,20 @@ function demandBall () {
     if (messageEl.innerHTML === demands[3]) {
       progress += 10
       randomDemands ()
-      return
     }
     winnerCheck()
 }
 
 
 function winnerCheck() {
-  console.log(progress);
   if (progress >= 90) {
-    winner.removeAttribute('hidden')
+    winner.removeAttribute("hidden")
     messageEl.setAttribute('hidden', true)
-    stopPlaying = true
+    clearInterval(time)
     calmSound.pause()
   } else if ((progress <= 0) || timeLeft === 0) {
     loser.removeAttribute('hidden')
-    stopPlaying = true
+    clearInterval(time)
     calmSound.pause()
     
   }
