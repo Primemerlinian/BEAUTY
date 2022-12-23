@@ -114,4 +114,17 @@ h2 {
   font-size: x-large;
 }
 
-
+#countdown {
+  display: flex;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 10px;
+  width: 350px;
+  height: 50px;
+  font-size: large;
+}
