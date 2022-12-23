@@ -5,10 +5,10 @@
 <h5>(photo of beginning of game)</h5>
 
 ![Game Progress](assets/Screenshot%202022-12-23%20at%201.36.04%20AM.png)
-<h5>Game in progress<h5>
+<h5>(Game in progress)<h5>
 
 ![End Game Message](assets/Screenshot%202022-12-23%20at%201.36.36%20AM.png)
-<h5>End game message<h5>
+<h5>(End game message)<h5>
 
 <p> This simulator game allows you to play with your pet and enjoy her favortie activites when you click on the corresponding demand.</p>
 
