@@ -20,4 +20,5 @@
 <li> Add levelup functionaltiy where dog grows up.</li>
 <li>Add sound effects to each button.</li>
 <li>Add popover page displaying instructions for the game.</li>
+<li>Add progress bar</li>
 <ul>
