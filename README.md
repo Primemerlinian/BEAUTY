@@ -4,6 +4,11 @@
 ![Beginning Game](assets/Screenshot%202022-12-23%20at%201.35.44%20AM.png)
 <h5>(photo of beginning of game)</h5>
 
+![Game Progress](assets/Screenshot%202022-12-23%20at%201.36.04%20AM.png)
+<h5>Game in progress<h5>
+
+
+
 <p> This simulator game allows you to play with your pet and enjoy her favortie activites when you click on the corresponding demand.</p>
 
 <a href="https://trello.com/b/mKUxbXxO/pet-simulator"> Here is my Trello planning board. Check it out!</a>
