@@ -89,8 +89,29 @@ h2 {
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding: 10px;
-  width: 200px;
+  width: 350px;
   height: 100px;
   background: rgba(255,255,255,0.3);
 }
+
+#begin-button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: x-large;
+}
+
+#reset-button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: x-large;
+}
+#score {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: x-large;
+}
+
 
