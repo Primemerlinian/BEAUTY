@@ -3,14 +3,14 @@
 <a href="https://beauty-simulator.netlify.app/">Play here!</a>
 </h1>
 
-![Beginning Game](assets/Screenshot%202022-12-23%20at%201.35.44%20AM.png)
 <h5>(photo of beginning of game)</h5>
+![Beginning Game](assets/Screenshot%202022-12-23%20at%201.35.44%20AM.png)
 
-![Game Progress](assets/Screenshot%202022-12-23%20at%201.36.04%20AM.png)
 <h5>(Game in progress)<h5>
+![Game Progress](assets/Screenshot%202022-12-23%20at%201.36.04%20AM.png)
 
-![End Game Message](assets/Screenshot%202022-12-23%20at%201.36.36%20AM.png)
 <h5>(End game message)<h5>
+![End Game Message](assets/Screenshot%202022-12-23%20at%201.36.36%20AM.png)
 
 <p> This simulator game allows you to play with your pet and enjoy her favortie activites when you click on the corresponding demand.</p>
 
