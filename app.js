@@ -16,6 +16,7 @@ const demands = [
 let timeLeft= 40;
 let progress= 0
 let time
+let scoreText;
 
 
 
@@ -38,6 +39,9 @@ let demandNum = Math.floor(Math.random() * demands.length)
 const calmSound = new Audio ("../assets/audio/calmgameplay.wav")
 let winner = document.querySelector('#winner')
 let loser = document.querySelector('#loser')
+const score = document.querySelector("#score");
+
+
 
 
 
@@ -73,7 +77,7 @@ function init() {
   beginButton.style.visibility = 'visible';
   winner.setAttribute('hidden', true)
   loser.setAttribute('hidden', true)
-
+  score.innerHTML = `Score:  0`;
   calmSound.pause()
   clearInterval(time)
 }
@@ -132,10 +136,10 @@ function winnerCheck() {
     loser.removeAttribute('hidden')
     clearInterval(time)
     calmSound.pause()
-    
   }
-
 }
+
+
   function startTimer(){
     time = setInterval(function() {
         countdownEl.textContent = timeLeft + ' seconds remaining.';
