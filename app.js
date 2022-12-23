@@ -66,6 +66,7 @@ ball.addEventListener('click', demandBall)
 
 /*-------------------------------- Functions --------------------------------*/
 
+
 init ()
 
 function init() {
