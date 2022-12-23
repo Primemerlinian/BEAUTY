@@ -26,7 +26,7 @@
 <li>CSS</li>
 <ul>
 
-<h4> NEXT STEPS/ ICE BOX 🧊</h4>
+<h3> NEXT STEPS/ ICE BOX 🧊</h3>
 <ul>
 <li> Add levelup functionaltiy where dog grows up.</li>
 <li>Add sound effects to each button.</li>
