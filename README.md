@@ -15,7 +15,7 @@
 
 ![End Game Message](assets/Screenshot%202022-12-23%20at%201.36.36%20AM.png)
 
-<p> This simulator game allows you to play with your pet and enjoy her favortie activites when you click on the corresponding demand.</p>
+<h3> This simulator game allows you to play with your pet and enjoy her favortie activites when you click on the corresponding demand.</h3>
 
 <a href="https://trello.com/b/mKUxbXxO/pet-simulator"> Here is my Trello planning board. Check it out!</a>
 
