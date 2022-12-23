@@ -1,5 +1,5 @@
 <h1> Meet Beauty. Your new favorite online pet simulator!</h1>
-<a href="https://beauty-simulator.netlify.app/">Play here!</a>
+<a href="https://beauty-simulator.netlify.app/"><strong>Play here!</strong></a>
 
 ![Beginning Game](assets/Screenshot%202022-12-23%20at%201.35.44%20AM.png)
 <h5>(photo of beginning of game)</h5>
