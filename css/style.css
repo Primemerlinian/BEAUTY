@@ -1,12 +1,16 @@
 body {
   background-image: url(https://img.freepik.com/premium-vector/nature-game-background_7814-520.jpg?w=740);
   align-items: center;
+  font-family: 'VT323', monospace;
+
 }
 
 h1 {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
 }
 
 #care {
@@ -60,6 +64,8 @@ h1 {
 
 h2 {
   text-align: center;
+  font-family: 'VT323', monospace;
+
 }
 
 .btn-class {
@@ -76,6 +82,8 @@ h2 {
   width: 350px;
   height: 100px;
   background: rgba(255,255,255,0.3);
+  font-family: 'VT323', monospace;
+
 }
 
 #begin-button {
@@ -83,6 +91,8 @@ h2 {
   border: none;
   background: none;
   font-size: x-large;
+  font-family: 'VT323', monospace;
+
 }
 
 #reset-button {
@@ -90,12 +100,15 @@ h2 {
   border: none;
   background: none;
   font-size: x-large;
+  font-family: 'VT323', monospace;
 }
 #score {
   padding: 0;
   border: none;
   background: none;
   font-size: x-large;
+  font-family: 'VT323', monospace;
+  
 }
 
 #countdown {
@@ -110,9 +123,13 @@ h2 {
   padding: 10px;
   width: 350px;
   height: 50px;
-  font-size: large;
+  font-size: 30px;
+  font-family: 'VT323', monospace;
+
 }
 
 h3 {
   text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
 }
