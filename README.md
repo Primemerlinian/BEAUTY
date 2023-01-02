@@ -20,16 +20,16 @@
 <a href="https://trello.com/b/mKUxbXxO/pet-simulator"> Here is my Trello planning board. Check it out!</a>
 
 <h2> NEXT STEPS/ ICE BOX 🧊 </h2>
-<ol>
-<li>Add level up functionaltiy where dog grows up.</li>
-<li>Add sound effects to each button.</li>
-<li>Add popover page displaying instructions for the game.</li>
-<li>Add progress bar</li>
-<ol>
+<ul>
+  <li>Add level up functionaltiy where dog grows up.</li>
+  <li>Add sound effects to each button.</li>
+  <li>Add popover page displaying instructions for the game.</li>
+  <li>Add progress bar</li>
+</ul>
 
 <h3> Technologies Used: </h3>
 <ul>
-<li> HTML</li>
-<li>JavaScript</li>
-<li>CSS</li>
-<ul>
+  <li> HTML</li>
+  <li>JavaScript</li>
+  <li>CSS</li>
+</ul>
