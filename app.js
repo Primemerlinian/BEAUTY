@@ -1,4 +1,3 @@
-/*-------------------------------- Constants --------------------------------*/
 
 const demands = [
   'I need attention 🥺🐾',
@@ -8,23 +7,11 @@ const demands = [
 ]
 
 
-
-
-
-/*-------------------------------- Variables --------------------------------*/
-
 let timeLeft= 40;
 let progress= 0
 let time
 let scoreText;
 
-
-
-
-
-
-
-/*------------------------ Cached Element References ------------------------*/
 
 const beginButton = document.getElementById('begin-button')
 const messageEl = document.getElementById('message')
@@ -43,13 +30,6 @@ const score = document.querySelector("#score");
 
 
 
-
-
-
-
-/*----------------------------- Event Listeners -----------------------------*/
-
-
 beginButton.addEventListener('click', begin)
 
 resetButton.addEventListener('click', init)
@@ -63,8 +43,6 @@ care.addEventListener('click', demandCare)
 ball.addEventListener('click', demandBall)
 
 
-
-/*-------------------------------- Functions --------------------------------*/
 
 
 init ()
