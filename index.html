@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="/app.js"></script>
-  <title>Beauty</title>
-  <link id="favicon" rel="shortcut icon" type="image/png" href="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8720984a8324243.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <style> @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); </style>
-</head>
-<body class="animate__animated animate__bounceInDown">
-  <h1 >Hello! Meet Beauty your new online best friend! She's a little demanding but overall loves you!</h1>
-  <div id="pet">
-    <input type="image" src="../assets/pet-removebg-preview.png" id="pet" alt=" beauty" height="400px"/>
-  </div>
-  <div id="instructions">
-    <h2> To keep her happy, match the items she is demanding when you press the begin button.</h2>
-  </div>
-  <div class= 'btn-class'id="beginButton">
-    <button id='begin-button'>Begin</button>
-    <button id="reset-button">Reset</button>
-    <button id="score">Score:  0</button>
-  </div>
-  <div id="countdown">
-    <h3>Timer</h3>
-  </div>
-  <div id="winner" hidden>
-    <h3 id="winner">You obeyed her demands! YOU WIN!</h3>
-  </div>
-  <div id="loser" hidden>
-    <h3 id="loser">You disobeyed her demands! YOU LOSE! DISHONOR ON YOU🤠! DISHONOR ON YOUR COW🐄!-🐉</h3>
-  </div>
-  <h2 id='message'></h2>
-  
-  <div class="demands">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="/app.js"></script>
+    <title>Beauty</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/png"
+      href="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8720984a8324243.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+    </style>
+  </head>
+  <body class="animate__animated animate__bounceInDown">
+    <h1>
+      Hello! Meet Beauty your new online best friend! She's a little demanding
+      but overall loves you!
+    </h1>
+    <div id="pet">
+      <input
+        type="image"
+        src="../assets/pet-removebg-preview.png"
+        id="pet"
+        alt=" beauty"
+        height="400px"
+      />
+    </div>
+    <div id="instructions">
+      <h2>
+        To keep her happy, match the items she is demanding when you press the
+        begin button.
+      </h2>
+    </div>
+    <div class="btn-class" id="beginButton">
+      <button id="begin-button">Begin</button>
+      <button id="reset-button">Reset</button>
+      <button id="score">Score: 0</button>
+    </div>
+    <div id="countdown">
+      <h3>Timer</h3>
+    </div>
+    <div id="winner" hidden>
+      <h3 id="winner">You obeyed her demands! YOU WIN!</h3>
+    </div>
+    <div id="loser" hidden>
+      <h3 id="loser">
+        You disobeyed her demands! YOU LOSE! DISHONOR ON YOU🤠! DISHONOR ON YOUR
+        COW🐄!-🐉
+      </h3>
+    </div>
+    <h2 id="message"></h2>
+
+    <div class="demands">
       <div class="demand-images">
-    <input type="image" src="../assets/dogcarebrushicon-removebg-preview.png" id="care" alt=" Care Button" height="100px"/>
-    <input type="image" src="../assets/dogfoodbowl-removebg-preview.png" id="food" alt="Food Button" height="100px"/>
-    <input type="image" src="../assets/playball.png" id="ball" alt="Ball Button" height="100px"/>
-    <input type="image" src= "../assets/playprints.png" id="attention" alt="attention Button" height="100px"/>
-  </div>
-</div>
-</body>
+        <input
+          type="image"
+          src="../assets/dogcarebrushicon-removebg-preview.png"
+          id="care"
+          alt=" Care Button"
+          height="100px"
+        />
+        <input
+          type="image"
+          src="../assets/dogfoodbowl-removebg-preview.png"
+          id="food"
+          alt="Food Button"
+          height="100px"
+        />
+        <input
+          type="image"
+          src="../assets/playball.png"
+          id="ball"
+          alt="Ball Button"
+          height="100px"
+        />
+        <input
+          type="image"
+          src="../assets/playprints.png"
+          id="attention"
+          alt="attention Button"
+          height="100px"
+        />
+      </div>
+    </div>
+  </body>
 </html>
