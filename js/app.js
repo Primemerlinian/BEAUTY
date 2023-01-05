@@ -42,13 +42,12 @@ init();
 function init() {
   resetButton.style.visibility = "visible";
   timeLeft = 60;
-  progress = 0;
   messageEl.innerText = "";
   countdownEl.innerText = "";
   beginButton.style.visibility = "visible";
   winner.setAttribute("hidden", true);
   loser.setAttribute("hidden", true);
-  score.innerHTML = `Score:  0`;
+  score.innerHTML = `Score:${0}`;
   calmSound.pause();
   clearInterval(time);
 }
@@ -69,6 +68,7 @@ function begin() {
 function demandAttention() {
   if (messageEl.innerHTML === demands[0]) {
     progress += 10;
+    score.innerHTML = `Score:${progress}`;
     randomDemands();
   }
   winnerCheck();
@@ -76,6 +76,7 @@ function demandAttention() {
 function demandFood() {
   if (messageEl.innerHTML === demands[1]) {
     progress += 10;
+    score.innerHTML = `Score:${progress}`;
     randomDemands();
   }
   winnerCheck();
@@ -83,6 +84,7 @@ function demandFood() {
 function demandCare() {
   if (messageEl.innerHTML === demands[2]) {
     progress += 10;
+    score.innerHTML = `Score:${progress}`;
     randomDemands();
   }
   winnerCheck();
@@ -90,13 +92,14 @@ function demandCare() {
 function demandBall() {
   if (messageEl.innerHTML === demands[3]) {
     progress += 10;
+    score.innerHTML = `Score:${progress}`;
     randomDemands();
   }
   winnerCheck();
 }
 
 function winnerCheck() {
-  if (progress >= 90) {
+  if (progress >= 100) {
     winner.removeAttribute("hidden");
     messageEl.setAttribute("hidden", true);
     clearInterval(time);

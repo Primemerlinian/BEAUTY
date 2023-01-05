@@ -1,54 +1,50 @@
 body {
   background-image: url(https://img.freepik.com/premium-vector/nature-game-background_7814-520.jpg?w=740);
   align-items: center;
-  font-family: 'VT323', monospace;
-
+  font-family: "VT323", monospace;
 }
 
 h1 {
   color: black;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 #000, -1px 1px 0 white, 1px 1px 0 white;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 #000, -1px 1px 0 white,
+    1px 1px 0 white;
   text-align: center;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 50px;
 }
 
 #care {
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   padding: 10px;
   width: 150px;
   height: 100px;
-  background: rgba(255,255,255,0.3);
-
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #food {
-  
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   padding: 10px;
   width: 150px;
   height: 100px;
-  background: rgba(255,255,255,0.3);
-
+  background: rgba(255, 255, 255, 0.3);
 }
 #ball {
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   padding: 10px;
   width: 150px;
   height: 100px;
-  background: rgba(255,255,255,0.3);
-
+  background: rgba(255, 255, 255, 0.3);
 }
 #attention {
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   padding: 10px;
   width: 200px;
   height: 100px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .demand-images {
@@ -61,11 +57,9 @@ h1 {
   justify-content: center;
 }
 
-
 h2 {
   text-align: center;
-  font-family: 'VT323', monospace;
-
+  font-family: "VT323", monospace;
 }
 
 .btn-class {
@@ -77,13 +71,12 @@ h2 {
   text-align: center;
   justify-content: space-between;
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   padding: 10px;
   width: 350px;
   height: 100px;
-  background: rgba(255,255,255,0.3);
-  font-family: 'VT323', monospace;
-
+  background: rgba(255, 255, 255, 0.3);
+  font-family: "VT323", monospace;
 }
 
 #begin-button {
@@ -91,8 +84,7 @@ h2 {
   border: none;
   background: none;
   font-size: x-large;
-  font-family: 'VT323', monospace;
-
+  font-family: "VT323", monospace;
 }
 
 #reset-button {
@@ -100,15 +92,14 @@ h2 {
   border: none;
   background: none;
   font-size: x-large;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
 #score {
   padding: 0;
   border: none;
   background: none;
   font-size: x-large;
-  font-family: 'VT323', monospace;
-  
+  font-family: "VT323", monospace;
 }
 
 #countdown {
@@ -124,12 +115,11 @@ h2 {
   width: 350px;
   height: 50px;
   font-size: 30px;
-  font-family: 'VT323', monospace;
-
+  font-family: "VT323", monospace;
 }
 
 h3 {
   text-align: center;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 30px;
 }
