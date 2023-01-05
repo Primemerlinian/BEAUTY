@@ -113,7 +113,7 @@ function startTimer() {
     countdownEl.textContent = timeLeft + " seconds remaining.";
     timeLeft -= 1;
     if (timeLeft < 0) {
-      countdownEl.textContent = "Demand time complete";
+      countdownEl.textContent = "Game Over";
     }
   }, 1000);
 }
