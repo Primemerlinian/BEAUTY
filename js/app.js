@@ -41,7 +41,7 @@ init();
 
 function init() {
   resetButton.style.visibility = "visible";
-  timeLeft = 60;
+  timeLeft = 40;
   messageEl.innerText = "";
   countdownEl.innerText = "";
   beginButton.style.visibility = "visible";
